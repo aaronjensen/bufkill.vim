@@ -1,7 +1,7 @@
 " bufkill.vim
 " Maintainer:	John Orr (john undersc0re orr yah00 c0m)
-" Version:	1.11
-" Last Change:	11 December 2012
+" Version:	1.12
+" Last Change:	09 Feb 2015
 
 " Introduction: {{{1
 " Basic Usage:
@@ -514,7 +514,7 @@ function! <SID>GotoBuffer(cmd, bang) "{{{1
         endif
         let w:BufKillIndex += 1
       else
-        let w:BuffKillIndex -= 1
+        let w:BufKillIndex -= 1
       endif
     endif
 
