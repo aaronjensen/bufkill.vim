@@ -378,7 +378,7 @@ function! <SID>BufKill(cmd, bang) "{{{1
   " window.  Thus we must check before deleting.
   if bufexists(s:BufKillBufferToKill)
     let killCmd = a:cmd . a:bang . s:BufKillBufferToKill
-    exec killCmd
+    silent! exec killCmd
   endif
 
   " Restore position if saved.  Needed on console vim, at least, to restore correct column
